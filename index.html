@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syllabus: MIS 374V - Vibe Coding</title>
+    <link rel="icon" type="image/png" href="bevo_ai.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@500;700&display=swap');
+
+        :root {
+            --ut-burnt-orange: #BF5700;
+            --charcoal: #333333;
+            --light-gray: #F8F9FA;
+            --border-color: #E9ECEF;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--charcoal);
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 40px;
+            background-color: white;
+        }
+
+        header {
+            border-bottom: 3px solid var(--ut-burnt-orange);
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: black;
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            color: var(--ut-burnt-orange);
+            margin-top: 50px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h3 {
+            font-size: 19px;
+            margin-top: 35px;
+            color: black;
+            border-left: 4px solid var(--ut-burnt-orange);
+            padding-left: 15px;
+        }
+
+        .meta-info {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .meta-item {
+            margin-bottom: 5px;
+        }
+
+        .meta-label {
+            font-weight: 700;
+            color: var(--charcoal);
+        }
+
+        .instructor-box {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 6px solid var(--ut-burnt-orange);
+        }
+
+        .instructor-box h3 {
+            margin-top: 0;
+            border: none;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .bullet-label {
+            font-weight: 700;
+            color: #000;
+            margin-right: 5px;
+        }
+
+        .learning-objective {
+            font-style: italic;
+            color: #666;
+            font-size: 0.92em;
+            margin-top: 6px;
+            margin-left: 20px;
+            display: block;
+            border-left: 2px solid var(--border-color);
+            padding-left: 10px;
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: var(--ut-burnt-orange);
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid var(--border-color);
+            margin: 60px 0;
+        }
+
+        a {
+            color: var(--ut-burnt-orange);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(191, 87, 0, 0.2);
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            border-bottom-color: var(--ut-burnt-orange);
+            background-color: rgba(191, 87, 0, 0.05);
+        }
+
+        .grading-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .grading-item {
+            font-weight: 600;
+        }
+
+        @media print {
+            body { margin: 0; padding: 20px; font-size: 12pt; }
+            .instructor-box { background-color: #f8f9fa !important; border: 1px solid #ddd; -webkit-print-color-adjust: exact; }
+            h2, h3 { page-break-after: avoid; }
+            section { page-break-inside: avoid; }
+            a { color: black; border: none; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div style="display: flex; gap: 40px; align-items: flex-start; margin-bottom: 40px;">
+    <div style="flex: 1;">
+        <header style="margin-bottom: 25px;">
+            <h1 style="color: var(--ut-burnt-orange); margin: 0 0 10px 0; font-size: 32px; line-height: 1.1;">MIS 374V: Vibe Coding and Applied AI Development</h1>
+            <div style="font-size: 14px; color: #666; font-weight: 500;">
+                Management Information Systems (MIS)<br>
+                <span style="color: #333;">The University of Texas at Austin</span>
+            </div>
+        </header>
+
+        <section style="margin: 0; border: none; padding: 0;">
+            <div class="meta-item"><span class="meta-label">Instructor:</span> <a href="https://www.linkedin.com/in/shayan-faradineh">Shayan Faradineh</a></div>
+            <div class="meta-item"><span class="meta-label">Contact Information:</span> ...</div>
+            <div class="meta-item"><span class="meta-label">Office Location:</span> ...</div>
+            <div class="meta-item"><span class="meta-label">Office Hours:</span> ...</div>
+            <div class="meta-item"><span class="meta-label">Canvas Link:</span> ...</div>
+            <div class="meta-item"><span class="meta-label">Final Exam:</span> ...</div>
+        </section>
+    </div>
+
+    <div style="width: 320px; height: 320px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.1); flex-shrink: 0;">
+        <div style="width: 100%; height: 100%; background: url('bevo_ai.png') no-repeat center 30%; background-size: cover;"></div>
+    </div>
+</div>
+
+<div class="instructor-box">
+    <h3>About the Instructor</h3>
+    <p>Hi, I'm Shayan! I’m a strategic operations leader and an AI developer currently at Google. I’m a Texas State University graduate and currently an MBA candidate at the UT McCombs School of Business. Throughout my seven years at Google, I have had the rare opportunity to navigate complex, massive-scale problems across entirely different organizations—spanning Executive Communications, Marketing, Cloud Go-To-Market, Product Strategy, and now Finance optimization. This cross-functional journey has given me a deep understanding of how technology actually scales inside one of the world's largest tech companies.</p>
+    <p>Outside of my corporate roles, I operate an AI strategy consultancy aimed at helping Small and Medium Businesses (SMBs) integrate generative tools into their workflows. I love operating at the exact intersection of executive business strategy and rapid AI engineering. My goal with this class is to help you bridge the gap between theoretical AI concepts and actually shipping functional software. I also aim to be an asset to you professionally; please feel free to reach out at any time for career advice, and you can connect with me on <a href="https://www.linkedin.com/in/shayan-faradineh">LinkedIn</a>.</p>
+</div>
+
+<h2>Course Description</h2>
+<p>Generative AI is changing software development. This course teaches students to build and manage applications using AI agents, a process known as "vibe coding." Students will learn the foundations of Large Language Models (LLMs) and develop the skills to prototype and deploy AI products.</p>
+
+<h2>Course Objectives</h2>
+<ul>
+    <li><span class="bullet-label">1. Explain Foundations:</span> Define LLM architectures, tokens, and context windows.</li>
+    <li><span class="bullet-label">2. Apply Workflows:</span> Use Google, OpenAI, and Anthropic tools to generate functional code.</li>
+    <li><span class="bullet-label">3. Analyze Strategy:</span> Evaluate the economics and legal implications of AI applications.</li>
+    <li><span class="bullet-label">4. Deploy Products:</span> Take a project from a concept to a live development state.</li>
+</ul>
+
+<h2>Grading Structure</h2>
+<div class="grading-list">
+    <div class="grading-item"><strong>Class Participation and Engagement:</strong> 30%</div>
+    <div class="grading-item"><strong>Midterm Exam:</strong> 25% (Mastery of Core Terminology and Model Pricing Strategy)</div>
+    <div class="grading-item"><strong>Solo Application Project:</strong> 45%</div>
+</div>
+
+<div class="enhanced-sections" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-top: 40px;">
+    <div class="tooling-suite" style="background: var(--light-gray); padding: 25px; border-radius: 8px; border-left: 4px solid var(--ut-burnt-orange);">
+        <h3 style="margin-top: 0; border: none; padding: 0;">AI Tooling Suite (Free)</h3>
+        <ul style="font-size: 13px; color: #555; list-style: none; padding: 0;">
+            <li style="margin-bottom: 8px;">🚀 <strong>LLM/Dev:</strong> <a href="https://aistudio.google.com/">Google AI Studio</a>, <a href="https://idx.google.com/">IDX</a></li>
+            <li style="margin-bottom: 8px;">🎨 <strong>UI:</strong> <a href="https://v0.dev/">v0.dev</a>, <a href="https://leonardo.ai/">Leonardo</a></li>
+            <li style="margin-bottom: 8px;">☁️ <strong>Infra:</strong> <a href="https://vercel.com/">Vercel</a>, <a href="https://supabase.com/">Supabase</a></li>
+            <li style="margin-bottom: 8px;">🔍 <strong>Lab:</strong> <a href="https://perplexity.ai/">Perplexity</a>, <a href="https://huggingface.co/">Hugging Face</a></li>
+        </ul>
+    </div>
+    <div class="roadmap" style="background: var(--light-gray); padding: 25px; border-radius: 8px; border-left: 4px solid var(--ut-burnt-orange);">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Project Roadmap</h3>
+        <div style="font-size: 13px; line-height: 1.8;">
+            <div><span class="highlight">Wk 8:</span> Strategy & Selection</div>
+            <div><span class="highlight">Wk 10:</span> Core Logic Build</div>
+            <div><span class="highlight">Wk 12:</span> Beta Deployment</div>
+            <div><span class="highlight">Wk 14:</span> Final Live Launch</div>
+        </div>
+    </div>
+    <div class="competencies" style="background: var(--light-gray); padding: 25px; border-radius: 8px; border-left: 4px solid var(--ut-burnt-orange);">
+        <h3 style="margin-top: 0; border: none; padding: 0;">Skills Gained</h3>
+        <ul style="font-size: 13px; color: #555; list-style: none; padding: 0;">
+            <li style="margin-bottom: 8px;">✅ <strong>Agentic Workflows</strong></li>
+            <li style="margin-bottom: 8px;">✅ <strong>RAG Architecture</strong></li>
+            <li style="margin-bottom: 8px;">✅ <strong>Prompt Governance</strong></li>
+            <li style="margin-bottom: 8px;">✅ <strong>Generative UX Design</strong></li>
+        </ul>
+    </div>
+</div>
+
+<div class="career-highlight" style="margin-top: 30px; background: #FFF9F5; border-left: 4px solid var(--ut-burnt-orange); padding: 20px; border-radius: 4px;">
+    <h3 style="margin-top: 0; border: none; padding: 0; color: var(--ut-burnt-orange); font-size: 18px;">The Career Advantage</h3>
+    <p style="margin: 10px 0 0 0; font-size: 14px; color: #444; line-height: 1.6;">
+        Beyond academic credit, this solo project serves as a significant <strong>portfolio asset</strong>. In an era where AI literacy and technical implementation are critical market differentiators, students will finish the semester with a live, deployed product to showcase in recruitment interviews, proving their ability to bridge the gap between business strategy and functional software.
+    </p>
+</div>
+
+<h2>Course Costs and Software Access</h2>
+<ul>
+    <li><span class="bullet-label">No Required Textbook:</span> All reading materials are available through free digital links provided in the syllabus and on Canvas.</li>
+    <li><span class="bullet-label">Software Benefits:</span> This course utilizes the "Education" tiers and free developer credits provided by Google, OpenAI, and Anthropic. Students will be guided on how to activate these benefits using their university email addresses.</li>
+</ul>
+
+<hr>
+
+<h2>Phase 1: Foundations</h2>
+
+<h3>Week 1: AI History and Market Overview</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> The 3,000-year history of AI, from the foundations of logic and Al-Khwarizmi's algebra to Alan Turing’s 1950 "Imitation Game." The transition into modern Large Language Models and a current market overview of the "Big Three" ecosystems—Google, OpenAI, and Anthropic.
+        <span class="learning-objective">Learning Objective Connection: Builds foundational literacy and establishes the market context for selecting development tools.</span>
+    </li>
+    <li><span class="bullet-label">Activity:</span> Account setup and basic prompting to compare model responses across the three main platforms.</li>
+    <li><span class="bullet-label">Helpful Material:</span> Alan Turing: <a href="https://www.umbc.edu/csee/courses/671/papers/turing.pdf">"Computing Machinery and Intelligence"</a>. Watch the <a href="https://www.youtube.com/watch?v=WXuK6gekU1Y">AlphaGo documentary</a>.</li>
+</ul>
+
+<h3>Week 2: AI Literacy and Quality Detection</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> Strategies for identifying model hallucinations and "AI Slop." Analysis of current workforce adoption trends and the broader societal effects of automated cognitive labor. Students will learn to distinguish between thoughtfully orchestrated AI output and low value synthetic content.
+        <span class="learning-objective">Learning Objective Connection: Directly supports the objective of evaluating AI outputs for business readiness and reliability.</span>
+    </li>
+    <li><span class="bullet-label">Activity:</span> Reviewing AI outputs to identify functional errors and aesthetic indicators of poor quality.</li>
+    <li><span class="bullet-label">Helpful Material:</span> Andrej Karpathy: <a href="https://www.youtube.com/watch?v=-hxe737M3Zg">"Intro to Large Language Models"</a>.</li>
+</ul>
+
+<h3>Week 3: Compute and AI Economics</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> The physical backbone of AI, including GPUs and data center logistics. An analysis of token based pricing models and how underlying hardware availability dictates the cost and speed of AI applications.
+        <span class="learning-objective">Learning Objective Connection: Connects technical token logic to the business objective of financial feasibility.</span>
+    </li>
+    <li><span class="bullet-label">Activity:</span> Calculating the cost of a hypothetical AI product based on different token usage patterns.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html">"The Bitter Lesson"</a> by Rich Sutton.</li>
+</ul>
+
+<h3>Week 4: How AI Thinks: Context and Accuracy</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> Understanding the "next token" prediction model. Controlling model behavior and output randomness. How to tune a model’s tone and accuracy for specific business use cases.
+        <span class="learning-objective">Learning Objective Connection: Provides the base knowledge required to understand why AI produces specific results and how to steer it towards business-quality answers.</span>
+    </li>
+    <li><span class="bullet-label">Activity:</span> Group discussion on managing model "context" to prevent logical errors in long documents.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="https://arxiv.org/abs/1706.03762">"Attention Is All You Need"</a>.</li>
+</ul>
+
+<h3>Week 5: Configuring AI Workflows</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> Advanced prompt strategies including "Chain of Thought" and practical examples of steering model logic. Understanding "system instructions" and how to build a reliable context for an AI employee.
+        <span class="learning-objective">Learning Objective Connection: Teaches the core skill of building reliable business logic without deep coding.</span>
+    </li>
+    <li><span class="bullet-label">Activity:</span> Designing a system prompt and instruction set for a specialized AI advisor.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="https://arxiv.org/abs/2201.11903">"Chain of Thought Prompting Elicits Reasoning in LLMs"</a>.</li>
+</ul>
+
+<h3>Week 6: APIs and AI Agents</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> Transitioning from chat interfaces to API driven development. Introduction to function calling, tool use, and the logic required to build autonomous agents that can interact with external web data.
+        <span class="learning-objective">Learning Objective Connection: Prepares students to connect their project to real world data sources.</span>
+    </li>
+    <li><span class="bullet-label">Activity:</span> Mapping the required API connections for an autonomous event planning agent.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="https://arxiv.org/abs/2210.03629">"ReAct: Synergizing Reasoning and Acting in LLMs"</a>.</li>
+</ul>
+
+<h3>Week 7: Midterm Exam</h3>
+
+<hr>
+
+<h2>Phase 2: Applied Development</h2>
+
+<h3>Week 8: Project Ideation and Planning</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> From concept to technical architecture. Students will define the scope of their final solo project and select the ecosystem (Google, OpenAI, or Anthropic) that best fits their product requirements.
+        <span class="learning-objective">Learning Objective Connection: Begins the final objective of launching a solo product.</span>
+    </li>
+    <li><span class="bullet-label">Project Step:</span> Finalize project proposal and ecosystem selection.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="https://research.ibm.com/blog/retrieval-augmented-generation-RAG">"What is Retrieval-Augmented Generation (RAG)?"</a>.</li>
+</ul>
+
+<h3>Week 9: Frontend and Asset Generation</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> Using AI to bridge the gap between wireframes and functional code. Utilizing multi-modal models to generate branding, icons, and professional media assets for the final application.
+        <span class="learning-objective">Learning Objective Connection: Focuses on the objective of generating functional, professional grade user experiences.</span>
+    </li>
+    <li><span class="bullet-label">Project Step:</span> Generate the initial UI interface for the solo application.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="https://vercel.com/blog/generative-ui">"Generative UI and the Future of UX"</a>.</li>
+</ul>
+
+<h3>Week 10: Application Logic</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> Practical AI assisted development. Using agents to build, debug, and iterate on application code while utilizing Git as a primary safety net during building.
+        <span class="learning-objective">Learning Objective Connection: Central to the goal of mastering AI assisted development workflows.</span>
+    </li>
+    <li><span class="bullet-label">Project Step:</span> Build core logic and connect prompts to data sources.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="https://12factor.net/">"The Twelve-Factor App"</a>.</li>
+</ul>
+
+<h3>Week 11: Legal and Responsibility</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> Copyright and Intellectual Property issues surrounding AI outputs. A review of data privacy concerns and the ethics of deploying models into public environments.
+        <span class="learning-objective">Learning Objective Connection: Addresses the legal and ethical analysis objective.</span>
+    </li>
+    <li><span class="bullet-label">Project Step:</span> Testing the application for failure modes and bias.</li>
+    <li><span class="bullet-label">Helpful Material:</span> <a href="https://faculty.washington.edu/ebender/papers/Bender-NE-ExpAI.pdf">"On the Dangers of Stochastic Parrots"</a>.</li>
+</ul>
+
+<h3>Week 12: Product Management</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> The operational challenges of AI, including prompt governance, model version drift, and handling the non deterministic nature of AI products in a production environment.
+        <span class="learning-objective">Learning Objective Connection: Covers the strategic objective of long term product management in the AI era.</span>
+    </li>
+    <li><span class="bullet-label">Project Step:</span> Public deployment of the solo project.</li>
+    <li><span class="bullet-label">Helpful Material:</span> Paul Graham: <a href="https://paulgraham.com/richnow.html">"How People Get Rich Now"</a>.</li>
+</ul>
+
+<h3>Week 13: Industry Review</h3>
+<ul>
+    <li><span class="bullet-label">Topics:</span> A review of emerging industry trends and a "final polish" workshop for the solo projects before launch.</li>
+</ul>
+
+<h3>Week 14: Project Launch</h3>
+<ul>
+    <li><span class="bullet-label">Activity:</span> Final project presentations and live demonstrations.</li>
+    <li><span class="bullet-label">Helpful Material:</span> Mustafa Suleyman: <a href="https://the-coming-wave.com/">"The Coming Wave"</a>.</li>
+</ul>
+
+<hr>
+
+<h2>Reference Library</h2>
+<ul>
+    <li><span class="bullet-label">Russell and Norvig:</span> <a href="http://aima.cs.berkeley.edu/">"Artificial Intelligence: A Modern Approach"</a> &mdash; The industry-standard textbook for the entire field. Included for students seeking a rigorous, comprehensive foundation in AI history and theory.</li>
+    <li><span class="bullet-label">Goodfellow, Bengio, and Courville:</span> <a href="https://www.deeplearningbook.org/">"Deep Learning"</a> &mdash; The definitive technical guide to neural networks. Included for those seeking a deep dive into the mathematical architecture of modern models.</li>
+    <li><span class="bullet-label">Brian Christian:</span> <a href="https://wwnorton.com/books/9780393635799">"The Alignment Problem"</a> &mdash; A high-level exploration of the challenge of ensuring AI values match human goals. Included for critical context on the ethical stakes of deployment.</li>
+    <li><span class="bullet-label">Hugging Face:</span> <a href="https://huggingface.co/blog">"Official Engineering Blog"</a> &mdash; The leading community hub for open-source AI. Included to keep students up-to-date with the latest model releases and engineering best practices.</li>
+</ul>
+
+<div class="manifesto" style="margin-top: 60px; padding: 40px; background: #222; color: #eee; border-radius: 12px; text-align: center;">
+    <h3 style="color: var(--ut-burnt-orange); margin-top: 0; border: none; font-size: 24px;">The Vibe Coding Manifesto</h3>
+    <div style="font-style: italic; font-size: 16px; line-height: 1.8; max-width: 700px; margin: 0 auto;">
+        "The best way to understand the AI era is not to study its history, but to build its future. In this course, we believe that <strong>Shipping is the primary teacher</strong>, that <strong>Natural Language is the new syntax</strong>, and that the only limit to what you can build is the clarity of your intent."
+    </div>
+</div>
+
+<footer style="margin-top: 100px; font-size: 11px; color: #888; border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
+    &copy; 2026 Shayan Faradineh &bull; MIS 374V Syllabus &bull; The University of Texas at Austin
+</footer>
+
+</body>
+</html>
